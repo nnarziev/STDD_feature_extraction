@@ -579,7 +579,7 @@ def get_gps_location_data(filename, start_time, end_time):
 
                         # distance between home location and current location
                         distance_from_home = get_distance(home_lat, home_lng, float(lat1), float(lng1))
-                        if distance > result['max_dist_from_home']:
+                        if distance_from_home > result['max_dist_from_home']:
                             result['max_dist_from_home'] = distance_from_home  # max dist from home calculated
 
                         centroid["lat"] += float(lat1)
